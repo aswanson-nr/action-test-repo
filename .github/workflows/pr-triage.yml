@@ -34,8 +34,7 @@ jobs:
     - name: Triages NEW issues and NEW pull requests to the Localization Project
       if: |
         github.event.action == 'labeled' &&
-        (contains(github.event.issue.labels.*.name, 'localization') ||
-        contains(github.event.pull_request.labels.*.name, 'localization'))
+        contains(github.event.pull_request.labels.*.name, 'localization')
       run: |
         HEADER="Accept: application/vnd.github.inertia-preview+json"
         PR_ID=${{ github.event.pull_request.id }}
