@@ -12,7 +12,7 @@ jobs:
   content_project:
     runs-on: ubuntu-latest
     env:
-      PROJECT_ID: 70179303
+      PROJECT_ID: 12097016
       PROJECT_NAME: Docs PRs and Issues
     name: Triage to Content Project
     steps:
